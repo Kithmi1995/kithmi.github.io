@@ -268,30 +268,6 @@
        
         
 
-<?php
-if (isset($_SESSION['message'])){
-    ?>
-    <script>
-        $(document).ready(function () {
-            console.log("<?php echo $_SESSION['message']; ?>");
-            toastr["success"]("<?php echo $_SESSION['message']; ?>");
-        });
-    </script>
-<?php
-    unset($_SESSION['message']);
-}
-else{
-    ?>
-    <!-- <script>
-        $(document).ready(function () {
-            console.log("no msg");
-            toastr["success"]("No message");
-        });
-    </script> -->
-
-    <?php
-}
-?>
 
     </body>
 </html>
